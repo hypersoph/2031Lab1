@@ -10,16 +10,14 @@
 main(){
   int c;
   int count = 0;
-  int counta = 0;
  
   c = getchar();
   while(c != EOF) /* no end of file*/
   { 
-    count++;
-    if (c=='a') counta++;
+    if (c!='\n') count++;
 
     c = getchar(); /* read next */
   }
-  printf("# of chars: %d\n# of char 'a': %d\n",count, counta);
+  printf("# of chars: %d\n",count);
 
 }
